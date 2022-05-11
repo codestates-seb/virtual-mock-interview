@@ -62,7 +62,8 @@
   "pre-commit": "lint:staged",
   "resolutions": {
     "babel-core": "7.0.0-bridge.0",
-    "glob-parent": "6.0.2"
+    "glob-parent": "6.0.2",
+    "semver-regex": "^3.1.2"
   },
   "dependencies": {
     "@babel/polyfill": "7.4.3",
