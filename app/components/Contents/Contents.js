@@ -5,13 +5,12 @@ const ContentsWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
   color: white;
 `;
 
 const ContentsBoxWrap = styled.div`
   padding: 20px;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,20 +18,20 @@ const ContentsBoxWrap = styled.div`
 
 const ContentsWrapper = styled.div`
   width: 100%;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
 const InterviewrName = styled.div`
+  text-align: center;
   font-size: 1rem;
 `;
 
 const ContentsPeople = styled.div`
-  margin: 20px 20px;
+  margin: 20px 20px 20px 20px;
   border-radius: 4px;
-  width: 670px;
-  min-width: 670px;
+  width: 674px;
   height: 480px;
   background-color: white;
   box-shadow: 3px 3px 1px 0 rgba(128, 128, 128, 0.5);
@@ -58,13 +57,14 @@ export default function Contents() {
             <ButtonIcon />
           </ContentsPeople>
         </ContentsWrapper>
-
-        <ContentsPeople>
+        <ContentsWrapper>
           <InterviewrName>면접관</InterviewrName>
-          <ButtonIcon />
-          <ButtonIcon />
-          <ButtonIcon />
-        </ContentsPeople>
+          <ContentsPeople>
+            <ButtonIcon />
+            <ButtonIcon />
+            <ButtonIcon />
+          </ContentsPeople>
+        </ContentsWrapper>
       </ContentsBoxWrap>
     </ContentsWrap>
   );

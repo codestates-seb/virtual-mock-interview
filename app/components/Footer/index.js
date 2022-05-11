@@ -1,30 +1,17 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
 
-import A from 'components/A';
-import LocaleToggle from 'containers/LocaleToggle';
-import Wrapper from './Wrapper';
-import messages from './messages';
+const FooterWrapper = styled.div`
+  width: 100%;
+  height: 60px;
+  background-color: #4d5166;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+`;
 
 function Footer() {
-  return (
-    <Wrapper>
-      <section>
-        <FormattedMessage {...messages.licenseMessage} />
-      </section>
-      <section>
-        <LocaleToggle />
-      </section>
-      <section>
-        <FormattedMessage
-          {...messages.authorMessage}
-          values={{
-            author: <A href="https://twitter.com/mxstbr">Max Stoiber</A>,
-          }}
-        />
-      </section>
-    </Wrapper>
-  );
+  return <FooterWrapper>면접 진행중입니다...</FooterWrapper>;
 }
 
 export default Footer;

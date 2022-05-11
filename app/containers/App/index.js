@@ -23,7 +23,6 @@ import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
   width: 100%;
-  height: 1200px;
   margin: 0 auto;
   display: flex;
   min-height: 100%;
@@ -50,6 +49,7 @@ export default function App() {
       <Footer /> */}
       <Title />
       <Contents />
+      <Footer />
       <GlobalStyle />
     </AppWrapper>
   );
